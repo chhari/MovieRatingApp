@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context="com.example.wendaqin.fourthgradeflashcardapp.MainActivity">
+
+    <TextView
+        android:id="@+id/txtDivend"
+        android:layout_width="120dp"
+        android:layout_height="71dp"
+        android:text="TextView"
+        android:textSize="120px"
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="43dp"
+        tools:text="1"
+        android:layout_above="@+id/txtDivsor"
+        android:layout_alignStart="@+id/txtDivsor"
+        android:layout_marginBottom="32dp" />
+
+    <TextView
+        android:id="@+id/txtDivOpr"
+        android:layout_width="82dp"
+        android:layout_height="71dp"
+        android:text="TextView"
+        android:textSize="120px"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="125dp"
+        tools:text="3"
+        android:layout_marginEnd="28dp"
+        android:layout_alignBaseline="@+id/txtDivsor"
+        android:layout_alignBottom="@+id/txtDivsor"
+        android:layout_toStartOf="@+id/btnSub" />
+
+    <TextView
+        android:id="@+id/txtDivsor"
+        android:layout_width="120dp"
+        android:layout_height="71dp"
+        android:text="TextView"
+        android:textSize="120px"
+        tools:text="2"
+        tools:layout_editor_absoluteY="125dp"
+        tools:layout_editor_absoluteX="172dp"
+        android:layout_above="@+id/btnGenPbms"
+        android:layout_alignStart="@+id/btnSub"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="25dp" />
+
+    <Button
+        android:id="@+id/btnGenPbms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate 10 Random problems"
+        android:textAllCaps="false"
+        tools:layout_editor_absoluteY="251dp"
+        tools:layout_editor_absoluteX="82dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/textView6"
+        android:layout_marginStart="17dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Answer:"
+        tools:layout_editor_absoluteY="339dp"
+        tools:layout_editor_absoluteX="-1dp"
+        android:layout_alignBottom="@+id/edtAns"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="11dp" />
+
+    <Button
+        android:id="@+id/btnSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="29dp"
+        android:text="SUBMIT"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="391dp"
+        android:layout_above="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/edtAns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        tools:layout_editor_absoluteY="324dp"
+        tools:layout_editor_absoluteX="85dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginBottom="26dp"
+        android:layout_above="@+id/btnSub"
+        android:layout_toEndOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp" />
+
+    <TextView
+        android:id="@+id/correct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toEndOf="@+id/txtDivsor" />
+
+</RelativeLayout>
